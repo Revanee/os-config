@@ -11,9 +11,12 @@
   };
 
   users.users."rev".packages = with pkgs; [
-    	flake-inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-    	code-cursor
-    	kitty
+    flake-inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+    code-cursor
+    kitty
+    ranger
+    highlight
+    tree
   ];
 
   environment.systemPackages = with pkgs; [
