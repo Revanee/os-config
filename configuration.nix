@@ -79,7 +79,13 @@
   users.users."rev" = {
     isNormalUser = true;
     description = "Hristo";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    shell = pkgs.fish;
+  };
+  virtualisation.docker = {
+    enable = true;
+    enableOnBoot = true;              # default: start dockerd at boot
+    autoPrune.enable = true;          # clean unused images/containers
   };
 
   # Allow unfree packages
@@ -127,6 +133,8 @@
   #
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
   system.stateVersion = "26.05"; # Did you read the comment?
+
+  fileSystems."/nix".options = [ "x-initrd.mount" "x-systemd.lazy-unmount" ];
 
   nix.settings.experimental-features = [
         "nix-command"

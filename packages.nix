@@ -3,7 +3,12 @@
   programs = {
     firefox.enable = true;
     nix-ld.enable = true;
-    fish.enable = true;
+    fish = {
+      enable = true;
+      shellAbbrs = {
+        vi = "nvim";
+      };
+    };
     nh = {
       enable = true;
       flake = "/home/rev/Documents/os-config";
@@ -17,6 +22,9 @@
     ranger
     highlight
     tree
+    kind
+    kubectl
+    fishPlugins.z
   ];
 
   environment.systemPackages = with pkgs; [
