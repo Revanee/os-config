@@ -1,0 +1,238 @@
+{
+  "nodes": {
+    "devshell": {
+      "inputs": {
+        "nixpkgs": [
+          "famedly-nixos",
+          "famedly-engineering-standards",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1768818222,
+        "narHash": "sha256-460jc0+CZfyaO8+w8JNtlClB2n4ui1RbHfPTLkpwhU8=",
+        "owner": "numtide",
+        "repo": "devshell",
+        "rev": "255a2b1725a20d060f566e4755dbf571bbbb5f76",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "devshell",
+        "type": "github"
+      }
+    },
+    "famedly-engineering-standards": {
+      "inputs": {
+        "devshell": "devshell",
+        "flake-parts": "flake-parts",
+        "github-actions-nix": "github-actions-nix",
+        "nixpkgs": "nixpkgs",
+        "rust-overlay": "rust-overlay"
+      },
+      "locked": {
+        "lastModified": 1781265653,
+        "narHash": "sha256-+hgwo8iiGm7gVFfuKA+zJaOKGGlSthup6G2wQnBmQGs=",
+        "owner": "famedly",
+        "repo": "engineering-standards",
+        "rev": "5817cc77d058ac50994b690bd483189078591be4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "famedly",
+        "repo": "engineering-standards",
+        "type": "github"
+      }
+    },
+    "famedly-nixos": {
+      "inputs": {
+        "famedly-engineering-standards": "famedly-engineering-standards",
+        "flake-parts": [
+          "famedly-nixos",
+          "famedly-engineering-standards",
+          "flake-parts"
+        ],
+        "fleet-nixos": "fleet-nixos",
+        "nixpkgs": [
+          "famedly-nixos",
+          "famedly-engineering-standards",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1783526232,
+        "narHash": "sha256-lXIcbDps79avfYa3sWmRd5isB5SPZN5R424AWxvMvQ4=",
+        "owner": "famedly",
+        "repo": "famedly-nixos",
+        "rev": "ecea30322474e96af8cc0aea05a0e49e609e1eaf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "famedly",
+        "repo": "famedly-nixos",
+        "type": "github"
+      }
+    },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib"
+      },
+      "locked": {
+        "lastModified": 1778716662,
+        "narHash": "sha256-m1Yf0wZ8j1OHjTc2UwHwyQRSnNeSgLJOd7q5Y45hzi4=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "f7c1a2d347e4c52d5fb8d10cb4d94b5884e546fb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "fleet-nixos": {
+      "inputs": {
+        "nixpkgs": [
+          "famedly-nixos",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1780683281,
+        "narHash": "sha256-kM1hupNGf2GfcU671Di9r2Ss1BiPhjx6TvyF4xHLRsg=",
+        "owner": "adamcik",
+        "repo": "fleet-nixos",
+        "rev": "e4fce0eaf7c0c898dfbc4c38e9a8358df4133144",
+        "type": "github"
+      },
+      "original": {
+        "owner": "adamcik",
+        "repo": "fleet-nixos",
+        "type": "github"
+      }
+    },
+    "github-actions-nix": {
+      "inputs": {
+        "flake-parts": [
+          "famedly-nixos",
+          "famedly-engineering-standards",
+          "flake-parts"
+        ],
+        "nixpkgs": [
+          "famedly-nixos",
+          "famedly-engineering-standards",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1773808042,
+        "narHash": "sha256-97K9g40SdtDVWslJG8ytpiC3+qgeQzftsZheGQ8qoGY=",
+        "owner": "synapdeck",
+        "repo": "github-actions-nix",
+        "rev": "805a4f69856e0f3d0bcd8ae916f1625f22b0578c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "synapdeck",
+        "repo": "github-actions-nix",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1779622335,
+        "narHash": "sha256-6lZN0CPBbeK9UVgFQ8EV4t2qSVQPhhlerFBGZRiz73Y=",
+        "rev": "705e9929918b43bd7b715dc0a878ac870449bb03",
+        "type": "tarball",
+        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05beta1.705e9929918b/nixexprs.tar.xz?lastModified=1779622335&rev=705e9929918b43bd7b715dc0a878ac870449bb03"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://channels.nixos.org/nixos-26.05/nixexprs.tar.xz"
+      }
+    },
+    "nixpkgs-lib": {
+      "locked": {
+        "lastModified": 1777168982,
+        "narHash": "sha256-GOkGPcboWE9BmGCRMLX3worL4EMnsnG8MyKmXNeYuhQ=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "f5901329dade4a6ea039af1433fb087bd9c1fe14",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1788297115,
+        "narHash": "sha256-Z+vUNbfd2FIKkWOTkcT7RYlh3oFCnig/d2eXD1SWf2E=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a3116115851d68b8952a2a4221cc25a84e56b532",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-26.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "famedly-nixos": "famedly-nixos",
+        "nixpkgs": "nixpkgs_2",
+        "zen-browser": "zen-browser"
+      }
+    },
+    "rust-overlay": {
+      "inputs": {
+        "nixpkgs": [
+          "famedly-nixos",
+          "famedly-engineering-standards",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1779851998,
+        "narHash": "sha256-UkkMh3bX9QW4Luqkm98nUaOqKWrU6i65mUnph3WeSSw=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "6cddd512fa2bf7231f098d3a2f92f6e4cff71e0a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "zen-browser": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1788083005,
+        "narHash": "sha256-e6U3sXUlu/QzZyJp/+ymW8s57Jbdb7bwT9+WaTAhHfQ=",
+        "owner": "youwen5",
+        "repo": "zen-browser-flake",
+        "rev": "afbbbef7c3c00f160f4a9dfdd8c6c6b8b089a33f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "youwen5",
+        "repo": "zen-browser-flake",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
