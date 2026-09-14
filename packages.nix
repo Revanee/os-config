@@ -24,16 +24,17 @@
   };
 
   users.users."rev".packages = with pkgs; [
-    flake-inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     code-cursor
-    kitty
-    ranger
+    fishPlugins.z
+    flake-inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     highlight
-    tree
+    kind
+    kitty
     kubectl
     kubernetes-helm
-    kind
-    fishPlugins.z
+    neovide
+    ranger
+    tree
   ];
 
   environment.systemPackages = with pkgs; [
@@ -41,6 +42,7 @@
     git
     gnome-tweaks
     psmisc
+    ripgrep
     unzip
   ];
 }
