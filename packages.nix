@@ -7,11 +7,16 @@
       enable = true;
       shellAbbrs = {
         vi = "nvim";
+        kc = "kubectl";
       };
     };
     nh = {
       enable = true;
       flake = "/home/rev/Documents/os-config";
+    };
+    neovim = {
+      enable = true;
+      defaultEditor = true;
     };
   };
 
@@ -22,13 +27,13 @@
     ranger
     highlight
     tree
-    kind
     kubectl
+    kubernetes-helm
+    kind
     fishPlugins.z
   ];
 
   environment.systemPackages = with pkgs; [
-    neovim
     git
     gcc
     gnome-tweaks
