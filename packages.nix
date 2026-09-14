@@ -9,6 +9,9 @@
         vi = "nvim";
         kc = "kubectl";
       };
+    interactiveShellInit = ''
+        set -g fish_greeting ""
+      '';
     };
     nh = {
       enable = true;
