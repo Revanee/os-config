@@ -37,9 +37,10 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    git
     gcc
+    git
     gnome-tweaks
     psmisc
+    unzip
   ];
 }
