@@ -43,6 +43,7 @@
     git
     gnome-tweaks
     go
+    nixd
     nodejs
     openssl
     pkg-config
