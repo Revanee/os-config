@@ -38,9 +38,14 @@
   ];
 
   environment.systemPackages = with pkgs; [
+    fd
     gcc
     git
     gnome-tweaks
+    go
+    nodejs
+    openssl
+    pkg-config
     psmisc
     ripgrep
     unzip
